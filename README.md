@@ -8,23 +8,23 @@ A two-way chat bridge between [Hypixel](https://hypixel.net/) guild chat and a [
 
 ## Table of Content
 
-- [Installation using NodeJS](#installation-using-nodejs)
-  - [Prerequisites](#prerequisites)
-  - [Setup Guide](#setup-guide)
-- [Installation using Docker](#installation-using-docker)
-  - [Prerequisites](#prerequisites-1)
-  - [Setup Guide](#setup-guide-1)
-- [Configuration](#configuration)
-- [Roadmap](#roadmap)
+-   [Installation using NodeJS](#installation-using-nodejs)
+    -   [Prerequisites](#prerequisites)
+    -   [Setup Guide](#setup-guide)
+-   [Installation using Docker](#installation-using-docker)
+    -   [Prerequisites](#prerequisites-1)
+    -   [Setup Guide](#setup-guide-1)
+-   [Configuration](#configuration)
+-   [Roadmap](#roadmap)
 
 ## Installation using NodeJS
 
 ### Prerequisites
 
-- Git
-- NodeJS >= 14
-- Yarn >= 1.2
-- A Minecraft account
+-   Git
+-   NodeJS >= 14
+-   Yarn >= 1.2
+-   A Minecraft account
 
 ### Setup Guide
 
@@ -48,9 +48,9 @@ Next edit and setup the config file with a proper Minecraft and Discord settings
 
 ### Prerequisites
 
-- Git
-- Docker >= 20
-- A Minecraft account
+-   Git
+-   Docker >= 20
+-   A Minecraft account
 
 _Older versions may also work, but have not been tested._
 
@@ -96,8 +96,8 @@ The prefix is the command prefixed used for all the commands in the bot on the D
 
 The messageMode can either be `bot` or `webhook`. This selects how the messages should be displayed when sent from Minecraft to Discord. If webhook mode is selected the bot requires the `Manage Webhooks` permission in the channel it's running in. The bot always requires the `Send Messages` and `View Channel` permissions in the channel you're using it in.
 
-- [View Webhook example](https://i.imgur.com/tulcMVA.png)
-- [View Bot Mode example](https://i.imgur.com/L8XhcNn.png)
+-   [View Webhook example](https://i.imgur.com/tulcMVA.png)
+-   [View Bot Mode example](https://i.imgur.com/L8XhcNn.png)
 
 > Note: The Discord rate limit for webhooks is 30 requests every 60 seconds, whereas for normal bot messages it's 5 messages every 5 seconds. Using webhooks effectively halves the number of messages the bot can send per minute which may cause issues in an active guild.
 
@@ -105,24 +105,24 @@ The messageMode can either be `bot` or `webhook`. This selects how the messages 
 
 `< >` = Required arguments, `[ ]` Optional arguments
 
-- `!help` - Displays the list of commands (`!h`)
-- `!relog [delay]` - Relogs the MC client, a delay can be given in seconds, if no delay is given it will default to 5 seconds (`!r`)
-- `!override <command> [args]` - Executes the string attached. This is a dangerous permission to grant (`!o`, `!or`)
-- `!invite <player>` - Invites the specified user to the guild, providing the guild isn't full (`!i`, `!inv`)
-- `!kick <user> [reason]` - Kicks the specified user from the guild (`!k`)
-- `!promote <user>` - Promotes the specified user by 1 rank (`!p`, `!up`)
-- `!demote <user>` - Demotes the specified user by 1 rank (`!d`, `!down`)
+-   `!help` - Displays the list of commands (`!h`)
+-   `!relog [delay]` - Relogs the MC client, a delay can be given in seconds, if no delay is given it will default to 5 seconds (`!r`)
+-   `!override <command> [args]` - Executes the string attached. This is a dangerous permission to grant (`!o`, `!or`)
+-   `!invite <player>` - Invites the specified user to the guild, providing the guild isn't full (`!i`, `!inv`)
+-   `!kick <user> [reason]` - Kicks the specified user from the guild (`!k`)
+-   `!promote <user>` - Promotes the specified user by 1 rank (`!p`, `!up`)
+-   `!demote <user>` - Demotes the specified user by 1 rank (`!d`, `!down`)
 
 ### Roadmap
 
-- [ ] Chat message filter
-  - The filter should block any messages sent from Discord to Hypixel that contains banable words, and words that could potentially cause a mute.
-- [ ] Log guild events
-  - Guild joins/leaves/kicks, mutes/unmutes and promotion/demotions
-- [ ] Ingame commands
-  - Add commands for players to use ingame to check other player stats (eg `!skills <ign>`, `!weight <ign>` etc)
-- [ ] Add support for officer chat
-  - Allocate a second discord channel to use for two way officer chat.
+-   [ ] Chat message filter
+    -   The filter should block any messages sent from Discord to Hypixel that contains banable words, and words that could potentially cause a mute.
+-   [ ] Log guild events
+    -   Guild joins/leaves/kicks, mutes/unmutes and promotion/demotions
+-   [ ] Ingame commands
+    -   Add commands for players to use ingame to check other player stats (eg `!skills <ign>`, `!weight <ign>` etc)
+-   [ ] Add support for officer chat
+    -   Allocate a second discord channel to use for two way officer chat.
 
 ## License
 
