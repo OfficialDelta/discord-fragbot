@@ -16,5 +16,13 @@
 		"ownerId": "ownerId",
 		"prefix": "!",
 		"messageMode": "bot"
-	}
+	},
+	"owner": "yourIGN",
+	"intro1": "Welcome, to Pixruns. Courtesy of Skynet and developed by PixelMelt",
+	"intro2": "Enjoy!",
+	"warpmessage": "Please dont warp me. It makes me sad when you do so :(",
+	"timeinparty": "secondsInParty",
+	"prefix": "inGamePrefix",
+
+	"debug": "off"
 }
