@@ -17,8 +17,8 @@ class MinecraftManager extends CommunicationBridge {
 		this.chatHandler = new ChatHandler(this, new CommandHandler(this))
 	}
 
-	connect() {
-		this.bot = this.createBotConnection()
+	async connect() {
+		this.bot = await this.createBotConnection()
 
 		this.errorHandler.registerEvents(this.bot)
 		this.stateHandler.registerEvents(this.bot)
@@ -32,8 +32,9 @@ class MinecraftManager extends CommunicationBridge {
 			port: this.app.config.server.port,
 			username: this.app.config.minecraft.username,
 			password: this.app.config.minecraft.password,
-			version: false,
+			version: '1.12.2',
 			auth: this.app.config.minecraft.accountType,
+			logErrors: true,
 		})
 	}
 
